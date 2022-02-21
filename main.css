@@ -2,8 +2,6 @@
     background-image: url("Image/project.jpg");
     width: 1600px;
     height: 750px;
-    padding: 1%;
-    margin: 4%;
 }
 
 
@@ -80,7 +78,7 @@
 }
 
 .fleche:first-child {
-    display: block;
+    display: flex;
     position: absolute;
     transform: rotate(45deg);
     left: 22%;
@@ -88,7 +86,7 @@
 }
 
 .fleche:nth-child(2) {
-    display: block;
+    display: flex;
     position: absolute;
     transform: rotate(-45deg);
     left: 46%;
@@ -103,10 +101,3 @@
     align-items: center;
 }
 
-#Sam
-{
-    width: 1600px;
-    height: 750px;
-    padding: 1%;
-    margin: 4%;
-}
