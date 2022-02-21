@@ -9,6 +9,9 @@
     
 }
 
+#BBV :hover img{
+    background-color: white;
+}
 
 .navbar>.container-fluid{
     justify-content: space-around;
