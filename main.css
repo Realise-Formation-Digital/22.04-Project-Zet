@@ -1,7 +1,12 @@
 #Diogo{
     background-image: url("Image/project.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: flex;
+    background-size: cover;
     width: 100%;
     height: 750px;
+    
 }
 
 
