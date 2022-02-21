@@ -1,5 +1,5 @@
 #Diogo{
-    background-image: url("project.jpg");
+    background-image: url("Image/project.jpg");
     width: 1600px;
     height: 750px;
     padding: 1%;
@@ -96,3 +96,17 @@
 }
 
     
+.Sphere
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Sam
+{
+    width: 1600px;
+    height: 750px;
+    padding: 1%;
+    margin: 4%;
+}
