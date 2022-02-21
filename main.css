@@ -1,0 +1,98 @@
+#Diogo{
+    background-image: url("project.jpg");
+    width: 1600px;
+    height: 750px;
+    padding: 1%;
+    margin: 4%;
+}
+
+
+.navbar>.container-fluid{
+    justify-content: space-around;
+    border: 0mm;
+}
+
+.navbar-dark .navbar-brand{
+    
+    top: 50%; 
+    right: 50%;
+    transform: initial;
+    
+    font-family: verdana;
+    font-size: 2em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: -1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 32px;
+    width: 619px;
+    
+}
+
+
+.titre{
+    color: #f5f5f5;
+    text-align: center;
+    margin-top: 150px;
+
+}
+.text{
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button{
+    
+    border: 1px solid #f5f5f5;
+    color: aliceblue;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 2rem;
+    width: 160px;
+}
+
+.center-con {
+    display: flex;
+    height: 21vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 1px solid rgb(247, 241, 241);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+.fleche{
+    z-index: 999;
+    height: 3px;
+    margin:0px;
+    width: 18px;
+    background: rgb(252, 248, 248);
+    transition: 0.4s ease;
+}
+
+.fleche:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 22%;
+    bottom: 42%;
+}
+
+.fleche:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 46%;
+    bottom: 42%;
+}
+
+    
