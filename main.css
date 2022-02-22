@@ -1,5 +1,6 @@
+/*Diogo*/
 #Diogo{
-    background-image: url("Image/project.jpg");
+    background-image: url("Images/project.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-image: flex;
@@ -101,7 +102,7 @@
     bottom: 42%;
 }
 
-    
+/*Sam*/    
 .Sphere
 {
     display: flex;
@@ -109,3 +110,167 @@
     align-items: center;
 }
 
+/*Bruno*/
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .works-title {
+    display: grid;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  
+  /*.testimonial-title {
+    margin-top: 4%;
+    display: grid;
+    text-align: center;
+  }*/
+  
+  .underline {
+    display: grid;
+    text-align: center;
+  }
+  
+  /*.testimonial {
+    margin-left: 22%;
+    margin-right: 22%;
+    display: grid;
+    text-align: center;
+  }*/
+  
+  #nopad > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  #img-col:hover {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+  }
+  
+  .hide {
+    padding-top: 3%;
+    text-align: center;
+    position: absolute;
+    padding-left: 3%;
+    display: none;
+    visibility: hidden;
+  }
+  
+  #img-col:hover .hide {
+    display: block;
+    visibility: visible;
+  }
+  
+  /*.quote {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 2%;
+    font-size: large;
+  }*/
+  
+  @media (min-width: 768px) {
+    #img-col {
+      min-width: 20%;}
+    }
+  
+    /*Yonat et Diogo*/
+    .carousel-item{
+        height: 20rem;
+        background: rgb(255, 255, 255);
+    }
+    
+    .carousel-indicators [data-bs-target]{
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: rgb(119, 119, 119);
+        background-clip: padding-box;
+        border: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+        border-radius: 100%;  
+    }
+    .testimonial-title{
+        margin-top: 4%;
+        display: grid;
+        text-align: center;
+    }
+    .testimonial{
+        margin-left: 22%;
+        margin-right: 22%;
+        display: grid;
+        text-align: center;
+    }
+    #quote{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        width: 2%;
+        font-size: large;
+    }
+    .underline{
+        display: grid;
+        text-align: center
+    }
+    
+    /*Lamine*/
+    article{
+        text-align: center;
+        font-weight: 200;
+        color: white;
+    }
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+    .row {
+        --bs-gutter-x: 1.5rem
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+    
+    input.transparent-input{
+        background-color:rgb(224, 13, 13, 0) !important;
+        border:white(red, green, blue);
+        color: white;
+     }
+     navbar-light .navbar-brand{
+    
+        top: 50%; 
+        right: 50%;
+        transform: initial;
+    
+        font-family: verdana;
+        font-size: 2em;
+        font-weight: 700;
+        color: #f5f5f5;
+        text-shadow: -1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 32px;
+        width: 619px;
+    
+    }
+    
