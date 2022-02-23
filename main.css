@@ -268,19 +268,19 @@ body {
         text-align: center;
     }
     
-    .card{
+    #carte{
         margin: 15px;
         margin-top: 1em;
     }
      
-    .card-body{
+    /*.card-body{
         background-color: rgb(201 201 201);
     }
     
     .card-group{
         
         margin-top: 75px;
-    }
+    }*/
     
     .button2{
         
@@ -298,11 +298,18 @@ body {
     }
 
     /*Lamine*/
-    article{
-        text-align: center;
-        font-weight: 200;
-        color: white;
-    }
+   
+article{
+
+text-align: center;
+font-weight: 200;
+color: white;
+        /* align-items: center; */
+justify-content align-content: center;
+        margin-top: 80px;
+        margin-left: 110px;
+        position: absolute;
+    }  
     .row {
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
