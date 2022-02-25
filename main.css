@@ -126,7 +126,7 @@
 
   
 #img-col:hover {
-    -webkit-filter: brightness(0.5);
+    -webkit-filter: brightness(0.1);
     filter: brightness(0.5);
 }
 
@@ -145,6 +145,8 @@
   
 #img-col:hover .hide {
     visibility: visible;
+    padding-left: 20%;
+    padding-top:20%
 }
   
 @media (min-width: 768px) {
