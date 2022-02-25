@@ -122,32 +122,32 @@
     display: grid;
     text-align: center;
 }
-  
-#nopad > * {
-    padding-left: 0;
-    padding-right: 0;
-}
+
+
   
 #img-col:hover {
     -webkit-filter: brightness(0.5);
     filter: brightness(0.5);
 }
-  
+
+/*---Visibility here can be changed for display with no significant changes in the code*/
+/*---Example---Visibility:hidden can be changed for display:none---*/
+/*---Example---Visibility:Visible can be changed for display:block---*/
+
+
 .hide {
     padding-top: 3%;
     text-align: center;
     position: absolute;
     padding-left: 3%;
-    display: none;
     visibility: hidden;
 }
   
 #img-col:hover .hide {
-    display: block;
     visibility: visible;
 }
   
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     #img-col {
       min-width: 20%;}
     }
