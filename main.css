@@ -151,6 +151,8 @@
     #img-col {
       min-width: 20%;}
     }
+
+
   
     /*Yonat et Diogo*/
     .carousel-item{
@@ -276,7 +278,7 @@ article{
         text-align: center;
         font-weight: 200;
         color: white;
-        position: absolute;
+        position:absolute;
         margin-left: 110px;
         margin-top: 80px;
         }  
