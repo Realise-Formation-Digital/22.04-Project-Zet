@@ -1,73 +1,11 @@
-const lienMenu = document.getElementById("lien-menu")
-const lienService = document.getElementById("lien-service")
-const lienWorks = document.getElementById("lien-works")
-const lienClients = document.getElementById("lien-clients")
-const lienTeam = document.getElementById("lien-team")
-const lienPricing = document.getElementById("lien-pricing")
-const lienContacte = document.getElementById("lien-contacte")
+const liens = document.getElementsByClassName('list-group-item');
 
-lienMenu.addEventListener("click",function(){
-    lienMenu.classList.add("active")
-    lienService.classList.remove("active")
-    lienWorks.classList.remove("active")
-    lienClients.classList.remove("active")
-    lienTeam.classList.remove("active")
-    lienPricing.classList.remove("active")
-    lienContacte.classList.remove("active")
-})
-lienService.addEventListener("click",function(){
-    lienService.classList.add("active")
-    lienMenu.classList.remove("active")
-    lienWorks.classList.remove("active")
-    lienClients.classList.remove("active")
-    lienTeam.classList.remove("active")
-    lienPricing.classList.remove("active")
-    lienContacte.classList.remove("active")
-})
-lienWorks.addEventListener("click",function(){
-    lienWorks.classList.add("active")
-    lienService.classList.remove("active")
-    lienMenu.classList.remove("active")
-    lienClients.classList.remove("active")
-    lienTeam.classList.remove("active")
-    lienPricing.classList.remove("active")
-    lienContacte.classList.remove("active")
-})
-lienClients.addEventListener("click",function(){
-    lienClients.classList.add("active")
-    lienWorks.classList.remove("active")
-    lienService.classList.remove("active")
-    lienMenu.classList.remove("active")
-    lienTeam.classList.remove("active")
-    lienPricing.classList.remove("active")
-    lienContacte.classList.remove("active")
-})
-lienTeam.addEventListener("click",function(){
-    lienTeam.classList.add("active")
-    lienClients.classList.remove("active")
-    lienWorks.classList.remove("active")
-    lienService.classList.remove("active")
-    lienMenu.classList.remove("active")
-    lienPricing.classList.remove("active")
-    lienContacte.classList.remove("active")
-})
-lienPricing.addEventListener("click",function(){
-    lienPricing.classList.add("active")
-    lienClients.classList.remove("active")
-    lienWorks.classList.remove("active")
-    lienService.classList.remove("active")
-    lienMenu.classList.remove("active")
-    lienTeam.classList.remove("active")
-    lienContacte.classList.remove("active")
-})
-lienContacte.addEventListener("click",function(){
-    lienContacte.classList.add("active")
-    lienClients.classList.remove("active")
-    lienWorks.classList.remove("active")
-    lienService.classList.remove("active")
-    lienMenu.classList.remove("active")
-    lienTeam.classList.remove("active")
-    lienPricing.classList.remove("active")
-   
-})
+Array.from(liens).forEach(element => {
+    element.addEventListener("click", function(){
+        Array.from(liens).forEach(el => {
+            el.classList.remove("active")
+        });
+        element.classList.add("active");
+    });
+});
 
