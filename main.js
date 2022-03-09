@@ -36,13 +36,13 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
 checkboxes.forEach(function(item) {
     item.addEventListener("change", function(e) {
-        let total = 0;
+        let total1 = 0;
         if (e.target.checked == true){
-            total =+ parseInt(e.target.value)
+            total1 =+ parseInt(e.target.value)
         } else {
-            total =- parseInt(e.target.value)
+            total1 =- parseInt(e.target.value)
         }
-        displayExtra1.value = (parseInt(total) + parseInt(displayExtra1.value)) + " " + "euro";
+        displayExtra1.value = (parseInt(total1) + parseInt(displayExtra1.value)) + " " + "euro";
 
         ResultatFinal1();
     })
@@ -75,13 +75,13 @@ select2.addEventListener("change", event => {
 
 checkboxes.forEach(function(item) {
     item.addEventListener("change", function(e) {
-        let total = 0;
+        let total2 = 0;
         if (e.target.checked == true){
-            total =+ parseInt(e.target.value)
+            total2 =+ parseInt(e.target.value)
         } else {
-            total =- parseInt(e.target.value)
+            total2 =- parseInt(e.target.value)
         }
-        displayExtra2.value = (parseInt(total) + parseInt(displayExtra2.value))  + " " + "euro";
+        displayExtra2.value = (parseInt(total2) + parseInt(displayExtra2.value))  + " " + "euro";
 
         ResultatFinal2();
     })
@@ -114,13 +114,13 @@ select3.addEventListener("change", event => {
 
 checkboxes.forEach(function(item) {
     item.addEventListener("change", function(e) {
-        let total = 0;
+        let total3 = 0;
         if (e.target.checked == true){
-            total =+ parseInt(e.target.value)
+            total3 =+ parseInt(e.target.value)
         } else {
-            total =- parseInt(e.target.value)
+            total3 =- parseInt(e.target.value)
         }
-        displayExtra3.value = (parseInt(total) + parseInt(displayExtra3.value)) + " " + "euro";
+        displayExtra3.value = (parseInt(total3) + parseInt(displayExtra3.value)) + " " + "euro";
 
         ResultatFinal3();
     })
