@@ -492,9 +492,9 @@
 
                               <label for="options" class="form-label lead fw-bold mb-3"> Complete your pack</label>
 
-                              <div class="row justify-content-center mb-2">
+                              <div class="row justify-content-center mb-4">
                                 <select class="form-select-md col-8 p-1" id="select1" aria-label="Default select example">
-                                  <option selected value="null">Merchandising</option>
+                                  <option selected value="0">Merchandising</option>
                                   <option id="pin1" value="12">pin (12$)</option>
                                   <option id="termo1" value="15">termo (15$)</option>
                                   <option id="mousePad1" value="18">mousepad (18$)</option>
@@ -502,39 +502,63 @@
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="35" id="vpn1">
+                                <input class="form-check-input sec1" type="checkbox" value="35">
                                 <label class="form-check-label col-6" for="vpn">
                                   1 Year VPN <span class="text-danger">(35$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="99" id="support1">
+                                <input class="form-check-input" type="checkbox" value="99">
                                 <label class="form-check-label col-6" for="support">
                                   Extend support 3 years <span class="text-danger">(99$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="30" id="preSell1">
+                                <input class="form-check-input" type="checkbox" value="30">
                                 <label class="form-check-label col-6" for="access">
                                   Access to Pre-sell <span class="text-danger">(30$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="144" id="maps1">
+                                <input class="form-check-input" type="checkbox" value="144">
                                 <label class="form-check-label col-6" for="maps">
                                   Pack Google Maps <span class="text-danger">(144$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check mb-3 row justify-content-center">
-                                <input class="form-check-input" type="checkbox" value="269" id="skyscanner1">
+                                <input class="form-check-input" type="checkbox" value="269">
                                 <label class="form-check-label col-6" for="">
                                   Pack Skyscanner API <span class="text-danger">(269$)</span>
                                 </label>
                               </div>
+                            </div>
+
+                            <div class="row mb-3 justify-content-center">
+
+                              <div class="col-2">
+                                <p class="fw-bold text-decoration-underline">
+                                  Extras
+                                </p>
+                              </div>
+                              <div class="col-5">
+                                <input type="text" id="extraTotal1" class="form-control text-center fw-bold" disabled>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                <div class="col-2">
+                                  <p class="fw-bold text-decoration-underline">
+                                    Merch:
+                                  </p>
+                                </div>
+                                <div class="col-5">
+                                  <input type="text" id="merchTotal1" class="form-control text-center fw-bold" disabled>
+                                </div>
+                              </div>
+
                             </div>
 
                             <div class="row">
@@ -544,7 +568,7 @@
                               </div>
 
                               <div class="col-8 mb-3">
-                                <input id="prix-total-btn1" type="text" class="form-control" disabled>
+                                <input id="input1" type="text" class="form-control text-center fw-bold" disabled>
                               </div>
                             </div>
 
@@ -619,9 +643,9 @@
 
                               <label for="options" class="form-label lead fw-bold mb-3"> Complete your pack</label>
 
-                              <div class="row justify-content-center mb-2">
-                                <select class="form-select-md col-8 p-1" aria-label="Default select example">
-                                  <option selected value="null">Merchandising</option>
+                              <div class="row justify-content-center mb-4">
+                                <select class="form-select-md col-8 p-1" aria-label="Default select example" id="select2">
+                                  <option selected value="0">Merchandising</option>
                                   <option id="pin2" value="12">pin (12$)</option>
                                   <option id="termo2" value="15">termo (15$)</option>
                                   <option id="mousePad2" value="18">mousepad (18$)</option>
@@ -629,39 +653,63 @@
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="35" id="vpn2">
+                                <input class="form-check-input" type="checkbox" value="35">
                                 <label class="form-check-label col-6" for="vpn">
                                   1 Year VPN <span class="text-danger">(35$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="99" id="support2">
+                                <input class="form-check-input" type="checkbox" value="99">
                                 <label class="form-check-label col-6" for="support">
                                   Extend support 3 years <span class="text-danger">(99$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="30" id="preSell2">
+                                <input class="form-check-input" type="checkbox" value="30">
                                 <label class="form-check-label col-6" for="access">
                                   Access to Pre-sell <span class="text-danger">(30$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="144" id="maps2">
+                                <input class="form-check-input" type="checkbox" value="144">
                                 <label class="form-check-label col-6" for="maps">
                                   Pack Google Maps <span class="text-danger">(144$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check mb-3 row justify-content-center">
-                                <input class="form-check-input" type="checkbox" value="269" id="skyscanner2">
+                                <input class="form-check-input" type="checkbox" value="269">
                                 <label class="form-check-label col-6" for="">
                                   Pack Skyscanner API <span class="text-danger">(269$)</span>
                                 </label>
                               </div>
+                            </div>
+
+                            <div class="row mb-3 justify-content-center">
+
+                              <div class="col-2">
+                                <p class="fw-bold text-decoration-underline">
+                                  Extras
+                                </p>
+                              </div>
+                              <div class="col-5">
+                                <input type="text" id="extraTotal2" class="form-control text-center fw-bold" disabled>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                <div class="col-2">
+                                  <p class="fw-bold text-decoration-underline">
+                                    Merch:
+                                  </p>
+                                </div>
+                                <div class="col-5">
+                                  <input type="text" id="merchTotal2" class="form-control text-center fw-bold" disabled>
+                                </div>
+                              </div>
+
                             </div>
 
                             <div class="row">
@@ -671,7 +719,7 @@
                               </div>
 
                               <div class="col-8 mb-3">
-                                <input id="input2" type="text" class="form-control" disabled>
+                                <input id="input2" type="text" class="form-control text-center fw-bold" disabled>
                               </div>
                             </div>
 
@@ -745,9 +793,9 @@
 
                               <label for="options" class="form-label lead fw-bold mb-3"> Complete your pack</label>
 
-                              <div class="row justify-content-center mb-2">
-                                <select class="form-select-md col-8 p-1" aria-label="Default select example">
-                                  <option selected value="null">Merchandising</option>
+                              <div class="row justify-content-center mb-4">
+                                <select class="form-select-md col-8 p-1" aria-label="Default select example" id="select3">
+                                  <option selected value="0">Merchandising</option>
                                   <option id="pin3" value="12">pin (12$)</option>
                                   <option id="termo3" value="15">termo (15$)</option>
                                   <option id="mousePad3" value="18">mousepad (18$)</option>
@@ -755,39 +803,63 @@
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="35" id="vpn">
+                                <input class="form-check-input" type="checkbox" value="35">
                                 <label class="form-check-label col-6" for="vpn3">
                                   1 Year VPN <span class="text-danger">(35$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="99" id="support3">
+                                <input class="form-check-input" type="checkbox" value="99">
                                 <label class="form-check-label col-6" for="support">
                                   Extend support 3 years <span class="text-danger">(99$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="30" id="preSell3">
+                                <input class="form-check-input" type="checkbox" value="30">
                                 <label class="form-check-label col-6" for="access">
                                   Access to Pre-sell <span class="text-danger">(30$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check row justify-content-center mb-2">
-                                <input class="form-check-input" type="checkbox" value="144" id="maps3">
+                                <input class="form-check-input" type="checkbox" value="144">
                                 <label class="form-check-label col-6" for="maps">
                                   Pack Google Maps <span class="text-danger">(144$)</span>
                                 </label>
                               </div>
 
                               <div class="form-check mb-3 row justify-content-center">
-                                <input class="form-check-input" type="checkbox" value="269" id="skyscanner3">
+                                <input class="form-check-input" type="checkbox" value="269">
                                 <label class="form-check-label col-6" for="">
                                   Pack Skyscanner API <span class="text-danger">(269$)</span>
                                 </label>
                               </div>
+                            </div>
+
+                            <div class="row mb-3 justify-content-center">
+
+                              <div class="col-2">
+                                <p class="fw-bold text-decoration-underline">
+                                  Extras
+                                </p>
+                              </div>
+                              <div class="col-5">
+                                <input type="text" id="extraTotal3" class="form-control text-center fw-bold" disabled>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                <div class="col-2">
+                                  <p class="fw-bold text-decoration-underline">
+                                    Merch:
+                                  </p>
+                                </div>
+                                <div class="col-5">
+                                  <input type="text" id="merchTotal3" class="form-control text-center fw-bold" disabled>
+                                </div>
+                              </div>
+
                             </div>
 
                             <div class="row">
@@ -797,7 +869,7 @@
                               </div>
 
                               <div class="col-8 mb-3">
-                                <input id="input3" type="text" class="form-control" disabled>
+                                <input id="input3" type="text" class="form-control text-center fw-bold" disabled>
                               </div>
                             </div>
 
