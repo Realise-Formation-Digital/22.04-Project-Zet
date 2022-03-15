@@ -35,10 +35,23 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                 
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
+                  
                 </div>
-
+                <div id="liens-boite"class="list-group">
+                    <a id="lien-menu"href="#Diogo" class="list-group-item list-group-item-action active" aria-current="true">
+                      Menu
+                    </a>
+                    <a id="lien-service"href="#Sam" class="list-group-item list-group-item-action">Section Services</a>
+                    <a id="lien-works"href="#Bruno" class="list-group-item list-group-item-action">Section Works</a>
+                    <a id="lien-clients"href="#Yonathan" class="list-group-item list-group-item-action">Section Happy Clients</a>
+                    <a id="lien-team"href="#professional-team"class="list-group-item list-group-item-action">Section Our Professional Team</a>
+                    <a id="lien-pricing"href="#Yonat" class="list-group-item list-group-item-action">Section Pricing Table</a>
+                    <a id="lien-contacte"href="#Lamine" class="list-group-item list-group-item-action">Section Contacte</a>
+                  </div>
+                
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
@@ -269,7 +282,7 @@
     <!-----------------END OF 15 IMAGES COINTAINER SECTION---------------->
     <!-------------------------------------------------------------------->
   </section>
-  <section class="Yonat et Diogo">
+  <section id="Yonathan"class="Yonat et Diogo">
     <!--  TITRE  -->
     <div class="testimonial-title">
       <h3 class="fw-bold">HAPPY CLIENTS</h3>
@@ -348,7 +361,7 @@
     <!--Diogo-->
     <!--titre et un texte-->
 
-    <div class="team">
+    <div id="professional-team"class="team">
       <p class="font-weight-bold">OUR PROFESSIONAL TEAM</p>
     </div>
     <div class="team-text">
@@ -457,15 +470,134 @@
               <!--  DESCRIPTION 1  -->
 
               <span class="text-center">
-                <p class="">exercitation ullaborum sed do</p>
-                <p class="">eiusmod tempor incididunt ut quis</p>
+                <p>exercitation ullaborum sed do</p>
+                <p>eiusmod tempor incididunt ut quis</p>
                 <p class="pb-5">nostrud exercitation ullamco laboris</p>
               </span>
 
               <!--  BOUTTON 1  -->
 
               <div class="card-body text-center">
-                <button class="btn btn-secondary btn-md text-uppercase fw-bolder rounded-pill px-5">Sing Up</button>
+                
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal-50" class="btn btn-secondary btn-md text-uppercase fw-bolder rounded-pill px-5">Buy Now!</button>
+
+                <div class="modal" id="modal-50">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <div class="modal-header justify-content-center bg-secondary bg-opacity-25 mb-1">
+                        <h4 class="modal-title">Resume</h4>
+                      </div>
+
+                      <div class="modal-body bg-secondary bg-opacity-25">
+
+                        <section class="container-fluid justify-content-center">
+
+                          <div class="row">
+                            <h6 class="card-title text-uppercase fw-bold">Standard</h6>
+                            <p class="h1 text-uppercase">$50</p>
+                            <p><small class="fw-lighter text-uppercase">per month</small></p>
+                          </div>
+
+                          <form>
+
+                            <div class="row mb-3">
+
+                              <label for="options" class="form-label lead fw-bold mb-3"> Complete your pack</label>
+
+                              <div class="row justify-content-center mb-4">
+                                <select class="form-select-md col-8 p-1" id="select1" aria-label="Default select example">
+                                  <option selected value="0">Merchandising</option>
+                                  <option id="pin1" value="12">Pin (12$)</option>
+                                  <option id="termo1" value="15">Termo (15$)</option>
+                                  <option id="mousePad1" value="18">Mousepad (18$)</option>
+                                </select>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="35">
+                                <label class="form-check-label col-6" for="vpn">
+                                  1 Year VPN <span class="text-danger">(35$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="99">
+                                <label class="form-check-label col-6" for="support">
+                                  Extend support 3 years <span class="text-danger">(99$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="30">
+                                <label class="form-check-label col-6" for="access">
+                                  Access to Pre-sell <span class="text-danger">(30$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="144">
+                                <label class="form-check-label col-6" for="maps">
+                                  Pack Google Maps <span class="text-danger">(144$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check mb-3 row justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="269">
+                                <label class="form-check-label col-6" for="">
+                                  Pack Skyscanner API <span class="text-danger">(269$)</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="row mb-3 justify-content-center">
+
+                              <div class="col-2">
+                                <p class="fw-bold text-decoration-underline">
+                                  Extras
+                                </p>
+                              </div>
+                              <div class="col-5">
+                                <input type="text" id="extraTotal1" class="form-control text-center fw-bold" disabled>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                <div class="col-2">
+                                  <p class="fw-bold text-decoration-underline">
+                                    Merch:
+                                  </p>
+                                </div>
+                                <div class="col-5">
+                                  <input type="text" id="merchTotal1" class="form-control text-center fw-bold" disabled>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+
+                              <div class="col-3 align-items-center">
+                                <p class="fw-bold lead text-uppercase text-decoration-underline me-3">total:</p>
+                              </div>
+
+                              <div class="col-8 mb-3">
+                                <input id="input1" type="text" class="form-control text-center fw-bold" disabled>
+                              </div>
+                            </div>
+
+                            <input class="btn-lg btn-success" type="submit" value="Buy Now!">
+                            
+                          </form>
+                        </section>
+                      </div>
+
+                      <div class="modal-footer bg-secondary bg-opacity-25">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -481,7 +613,7 @@
                 <div class="text-center">
                   <br><br>
                   <h6 class="card-title text-uppercase fw-bold">Best Pack</h6>
-                  <span class="h1 text-uppercase">$100</span>
+                  <p class="h1 text-uppercase">$100</p>
                   <p><small class="fw-lighter text-uppercase">per month</small></p>
                   <br><br>
                 </div>
@@ -490,16 +622,133 @@
               <!--  DESCRIPTION 2  -->
 
               <span class="text-center mb-4 mt-3">
-                <p class="">eiusmod tempor incididunt ut quis</p>
-                <p class="">nostrud exercitation ullamco laboris</p>
-                <p class="">minim aliqua labore dolore nostrud</p>
-                <p class="">laboris ullamco incididunt quis</p>
+                <p>eiusmod tempor incididunt ut quis</p>
+                <p>nostrud exercitation ullamco laboris</p>
+                <p>minim aliqua labore dolore nostrud</p>
+                <p>laboris ullamco incididunt quis</p>
               </span>
               <!--  BOUTTON 2  -->
               <div class="card-body text-center pt-2 pb-0">
 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal-100" class="btn btn-secondary btn-md text-uppercase fw-bolder rounded-pill px-5">Buy Now!</button>
 
-                <button class="btn btn-secondary btn-md text-uppercase fw-bolder rounded-pill px-5 ">Sing Up</button>
+                <div class="modal" id="modal-100">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <div class="modal-header justify-content-center bg-secondary bg-opacity-25 mb-1">
+                        <h4 class="modal-title">Resume</h4>
+                      </div>
+
+                      <div class="modal-body bg-secondary bg-opacity-25">
+
+                        <section class="container-fluid justify-content-center">
+
+                          <div class="row">
+                            <h6 class="card-title text-uppercase fw-bold">Best Pack</h6>
+                            <p class="h1 text-uppercase">$100</p>
+                            <p><small class="fw-lighter text-uppercase">per month</small></p>
+                          </div>
+
+                          <form>
+
+                            <div class="row mb-3">
+
+                              <label for="options" class="form-label lead fw-bold mb-3"> Complete your pack</label>
+
+                              <div class="row justify-content-center mb-4">
+                                <select class="form-select-md col-8 p-1" aria-label="Default select example" id="select2">
+                                  <option selected value="0">Merchandising</option>
+                                  <option id="pin2" value="12">Pin (12$)</option>
+                                  <option id="termo2" value="15">Termo (15$)</option>
+                                  <option id="mousePad2" value="18">Mousepad (18$)</option>
+                                </select>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="35">
+                                <label class="form-check-label col-6" for="vpn">
+                                  1 Year VPN <span class="text-danger">(35$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="99">
+                                <label class="form-check-label col-6" for="support">
+                                  Extend support 3 years <span class="text-danger">(99$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="30">
+                                <label class="form-check-label col-6" for="access">
+                                  Access to Pre-sell <span class="text-danger">(30$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="144">
+                                <label class="form-check-label col-6" for="maps">
+                                  Pack Google Maps <span class="text-danger">(144$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check mb-3 row justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="269">
+                                <label class="form-check-label col-6" for="">
+                                  Pack Skyscanner API <span class="text-danger">(269$)</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="row mb-3 justify-content-center">
+
+                              <div class="col-2">
+                                <p class="fw-bold text-decoration-underline">
+                                  Extras
+                                </p>
+                              </div>
+                              <div class="col-5">
+                                <input type="text" id="extraTotal2" class="form-control text-center fw-bold" disabled>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                <div class="col-2">
+                                  <p class="fw-bold text-decoration-underline">
+                                    Merch:
+                                  </p>
+                                </div>
+                                <div class="col-5">
+                                  <input type="text" id="merchTotal2" class="form-control text-center fw-bold" disabled>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+
+                              <div class="col-3 align-items-center">
+                                <p class="fw-bold lead text-uppercase text-decoration-underline me-3">total:</p>
+                              </div>
+
+                              <div class="col-8 mb-3">
+                                <input id="input2" type="text" class="form-control text-center fw-bold" disabled>
+                              </div>
+                            </div>
+
+                            <input class="btn-lg btn-success" type="submit" value="Buy Now!">
+                            
+                          </form>
+                        </section>
+                      </div>
+
+                      <div class="modal-footer bg-secondary bg-opacity-25">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -512,7 +761,7 @@
                 <div class="text-center">
                   <br><br>
                   <h6 class="card-title text-uppercase fw-bold">VIP Pack</h6>
-                  <span class="h1 text-uppercase">$250</span>
+                  <p class="h1 text-uppercase">$250</p>
                   <p><small class="fw-lighter text-uppercase">per month</small></p>
                   <br><br>
                 </div>
@@ -530,12 +779,130 @@
               <!-- BOUTTON 3  -->
 
               <div class="card-body text-center">
-                <button class="btn btn-secondary btn-md text-uppercase fw-bolder rounded-pill px-5">Sing Up</button>
+
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal-250" class="btn btn-secondary btn-md text-uppercase fw-bolder rounded-pill px-5">Buy Now!</button>
+
+                <div class="modal" id="modal-250">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <div class="modal-header justify-content-center bg-secondary bg-opacity-25 mb-1">
+                        <h4 class="modal-title">Resume</h4>
+                      </div>
+
+                      <div class="modal-body bg-secondary bg-opacity-25">
+
+                        <section class="container-fluid justify-content-center">
+
+                          <div class="row">
+                            <h6 class="card-title text-uppercase fw-bold">VIP Pack</h6>
+                            <p class="h1 text-uppercase">$250</p>
+                            <p><small class="fw-lighter text-uppercase">per month</small></p>
+                          </div>
+
+                          <form>
+
+                            <div class="row mb-3">
+
+                              <label for="options" class="form-label lead fw-bold mb-3"> Complete your pack</label>
+
+                              <div class="row justify-content-center mb-4">
+                                <select class="form-select-md col-8 p-1" aria-label="Default select example" id="select3">
+                                  <option selected value="0">Merchandising</option>
+                                  <option id="pin3" value="12">Pin (12$)</option>
+                                  <option id="termo3" value="15">Termo (15$)</option>
+                                  <option id="mousePad3" value="18">Mousepad (18$)</option>
+                                </select>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="35">
+                                <label class="form-check-label col-6" for="vpn3">
+                                  1 Year VPN <span class="text-danger">(35$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="99">
+                                <label class="form-check-label col-6" for="support">
+                                  Extend support 3 years <span class="text-danger">(99$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="30">
+                                <label class="form-check-label col-6" for="access">
+                                  Access to Pre-sell <span class="text-danger">(30$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check row justify-content-center mb-2">
+                                <input class="form-check-input" type="checkbox" value="144">
+                                <label class="form-check-label col-6" for="maps">
+                                  Pack Google Maps <span class="text-danger">(144$)</span>
+                                </label>
+                              </div>
+
+                              <div class="form-check mb-3 row justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="269">
+                                <label class="form-check-label col-6" for="">
+                                  Pack Skyscanner API <span class="text-danger">(269$)</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="row mb-3 justify-content-center">
+
+                              <div class="col-2">
+                                <p class="fw-bold text-decoration-underline">
+                                  Extras
+                                </p>
+                              </div>
+                              <div class="col-5">
+                                <input type="text" id="extraTotal3" class="form-control text-center fw-bold" disabled>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                <div class="col-2">
+                                  <p class="fw-bold text-decoration-underline">
+                                    Merch:
+                                  </p>
+                                </div>
+                                <div class="col-5">
+                                  <input type="text" id="merchTotal3" class="form-control text-center fw-bold" disabled>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+
+                              <div class="col-3 align-items-center">
+                                <p class="fw-bold lead text-uppercase text-decoration-underline me-3">total:</p>
+                              </div>
+
+                              <div class="col-8 mb-3">
+                                <input id="input3" type="text" class="form-control text-center fw-bold" disabled>
+                              </div>
+                            </div>
+
+                            <input class="btn-lg btn-success" type="submit" value="Buy Now!">
+                            
+                          </form>
+                        </section>
+                      </div>
+
+                      <div class="modal-footer bg-secondary bg-opacity-25">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
   </section>
   <!--contact of our company:maps and form  -->
   <footer id="Lamine">
@@ -596,9 +963,11 @@
     </section>
   </footer>
 
+  <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
 </body>
 
 </html>
