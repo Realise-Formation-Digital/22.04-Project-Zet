@@ -1,3 +1,6 @@
+<?php
+  include("meinPhp.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -915,30 +918,32 @@
         <div class="col-md-6">
           <div style="background-image: url(Images/sofa.png); height: 100%; width: 100%;" class="img-thumbnail">
             <!--Form-->
-            <article>
+            <form action="index.php" method="post">
               <div class="row mb-3">
-                <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+                <label for="inputname" class="col-sm-2 col-form-label text-white">
+                  Name</label>
                 <div class="col-sm-10">
-                  <input class="form-control transparent-input" type="Name" class="form-control" id="Name">
+                  <input class="form-control transparent-input" type="text" class="form-control" id="Name" name="name">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <label for="inputEmail3" class="col-sm-2 col-form-label text-white">Email</label>
                 <div class="col-sm-10">
-                  <input class="form-control transparent-input" type="email" class="form-control" id="inputEmail">
+                  <input class="form-control transparent-input" type="email" class="form-control text-white" id="inputEmail">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="inputnumber" class="col-sm-2 col-form-label">Phone</label>
+                <label for="inputnumber" class="col-sm-2 col-form-label text-white">Phone</label>
                 <div class="col-sm-10">
                   <input class="form-control transparent-input" type="number" class="form-control" id="number">
                 </div>
               </div>
               <div class="mb-3">
-                <label for="Textarea" class="form-label">Message</label>
+                <label for="Textarea" class="form-label text-white">Message</label>
                 <input class="form-control transparent-input" id="Textarea" rows="10" cols="30">
+                <input type="submit" value="Envoyer-le à Mr. PHP">
               </div>
-            </article>
+            </form>
           </div>
         </div>
       </div>
