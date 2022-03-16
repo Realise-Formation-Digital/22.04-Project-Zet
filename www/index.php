@@ -1,3 +1,7 @@
+<?php
+  include "contact.php"
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -963,50 +967,63 @@
     </section>
     <section class="row justify-content-center">
       <button class="btn-lg btn-outline-danger text-center fw-bold col-2 mt-3 mb-3" data-bs-target="#contact" data-bs-toggle="modal">Contact</button>
-
+  
       <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="ariaContact" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
+  
             <div class="modal-header text-center">
               <h3 class="mt-3 fw-bold text-decoration-underline text-info">Form Contact</h3>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+  
             <div class="modal-body">
-              <form action="contact.php" method="post">
+              <form action="" method="post">
                 <div class="mb-3">
                   <label for="name" class="form-label fw-bold text-decoration-underline"> Nom</label>
-                  <input type="text" class="form-control" id="name" name="nom" placeholder="Votre nom..." required>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom...">
+                  <?php echo $error1;?>
                 </div>
+  
                 <div class="mb-3">
                   <label for="mail" class="form-label fw-bold text-decoration-underline"> E-mail</label>
-                  <input type="email" class="form-control mb-5" id="mail" name="email" placeholder="email@example.com" required>
-                </div> <div class="d-flex justify-content-center">
+                  <input type="email" class="form-control mb-5" id="mail" name="email" placeholder="email@example.com">
+                  <?php echo $error2;?>
+                </div>
+  
+                <div class="d-flex justify-content-center">
                   <hr class="w-75">
                 </div>
+  
                 <div class="mb-3 row d-flex justify-content-center">
                   <div class="col">
                     <label for="subject" class="form-label fw-bold text-decoration-underline"> Sujet</label>
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control w-50 " id="subject" name="sujet" placeholder="Sujet...">
+                    <input type="text" class="form-control w-50 " id="subject" name="subject" placeholder="Sujet...">
+                    <?php echo $error3;?>
                   </div>
                 </div>
+  
                 <div class="mb-3">
                   <label for="textarea" class="form-label fw-bold text-decoration-underline">Message</label>
                   <textarea class="form-control" name="message" id="textarea" cols="30" rows="3"></textarea>
                 </div>
+  
+                <button type="submit" name="submit" class="btn btn-success">Send</button>
+  
               </form>
             </div>
+  
             <div class="modal-footer">
-              <button type="submit" name="submit" class="btn btn-success">Send</button>
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
+            
           </div>
         </div>
-
       </div>
-
     </section>
+    <?php echo $error;?>
   </footer>
 
   <script src="main.js"></script>
