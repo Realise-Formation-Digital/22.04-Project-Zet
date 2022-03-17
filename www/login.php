@@ -32,20 +32,6 @@ if (!preg_match ($pattern, $username,) ){
 
 
 
-// Exportation au CSV
-
-if ($errmsg == "") {
-    $fo = fopen("stock.csv", "a");
-
-    $register = array(
-        $email,
-        $pass
-    );
-
-    fputcsv($fo, $register, ";");
-}
-
-var_dump($errmsg, $register);
 
 // Importation depuis le CSV
 
@@ -62,15 +48,9 @@ if (($handle = fopen("stock.csv", "r")) !== FALSE):
     fclose($handle);
 endif;
 
-var_dump($data);
 
-// Compare le $register à $data
 
-if ($register != $data) {
-    $refusacc = "accès refusé";
-} else {
-    echo "Bienvenu", $username;
-}
+
 
 
 ?>
