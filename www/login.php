@@ -9,25 +9,25 @@ if ( isset( $_POST['submit'] ) ) {
        la valeur des attributs name comme clé 
     */
 
-    $email = $_POST['email']; 
-    $pass = $_POST['pass'];
-    // Cryptage du password
-    $pass = password_hash($pass, PASSWORD_BCRYPT); 
+    $username = $_POST['username']; 
+    $password = $_POST['password'];
+    // Cryptage du passwordword
+    $password = passwordword_hash($password, PASSwordWORD_BCRYPT); 
   
     // Concaténation 
 
-    ' email : ' . $email .
-    ' pass : ' . $pass ;
+    ' username : ' . $username .
+    ' password : ' . $password ;
 }
 
 // vérification d'adresse mail
 
 $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^";  
-if (!preg_match ($pattern, $email,) ){  
-    $errmsg = "Email non valide.";  
+if (!preg_match ($pattern, $username,) ){  
+    $errmsg = "username non valide.";  
   
 } else {  
-    echo "Votre email est: " .$email;  
+    echo "Votre username est: " .$username;  
 }
 
 
@@ -62,7 +62,15 @@ if (($handle = fopen("stock.csv", "r")) !== FALSE):
     fclose($handle);
 endif;
 
-var_dump($data)
+var_dump($data);
+
+// Compare le $register à $data
+
+if ($register != $data) {
+    $refusacc = "accès refusé";
+} else {
+    echo "Bienvenu", $username;
+}
 
 
 ?>

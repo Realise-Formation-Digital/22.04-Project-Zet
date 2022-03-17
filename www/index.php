@@ -1,5 +1,6 @@
 <?php
 include "register.php";
+include "login.php";
 ?>
 
 
@@ -53,7 +54,7 @@ include "register.php";
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <form action="loggin.php" method="post" >
+                        <form action="login.php" method="post" >
                           <div class="mb-3">
                             <label class="form-label">Email Address</label>
                             <input type="text" class="form-control" id="username" name="username"
