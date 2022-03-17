@@ -80,7 +80,7 @@ include "register.php";
 
                 <!-- Modal Button Sign Up-->
                 <button type="button" class="btn d-block btn-mdl" data-bs-toggle="modal" data-bs-target="#modalForm">
-                  Sign Up
+                Enregistrer
                 </button>
 
                 <!-- Modal Sign Up-->
@@ -89,7 +89,7 @@ include "register.php";
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Enregistrer</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
@@ -104,12 +104,8 @@ include "register.php";
                             <input type="password" class="form-control" id="pass" name="pass"
                               placeholder="Password" required />
                           </div>
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="rememberMe" />
-                            <label class="form-check-label" for="rememberMe">Remember me</label>
-                          </div>
                           <div class="modal-footer d-block">
-                            <button type="submit" name="submit" class="btn btn-warning float-end">Submit</button>
+                            <button type="submit" name="submit" class="btn btn-warning float-end">Enregistrer</button>
                           </div>
                         </form>
                       </div>
