@@ -929,7 +929,7 @@
               <div class="row mb-3">
                 <label for="inputEmail3" class="col-sm-2 col-form-label text-white">Email</label>
                 <div class="col-sm-10">
-                  <input class="form-control transparent-input" type="email" class="form-control text-white" id="inputEmail">
+                  <input class="form-control transparent-input" type="email" class="form-control text-white" id="inputEmail" name="email">
                 </div>
               </div>
               <div class="row mb-3">
@@ -940,8 +940,8 @@
               </div>
               <div class="mb-3">
                 <label for="Textarea" class="form-label text-white">Message</label>
-                <input class="form-control transparent-input" id="Textarea" rows="10" cols="30">
-                <input type="submit" value="Envoyer-le à Mr. PHP">
+                <input class="form-control transparent-input" id="Textarea" rows="10" cols="30" name="message"">
+                <input type="submit" value="Envoyer-le à Mr. PHP"><?php echo ("$msg");?>
               </div>
             </form>
           </div>
