@@ -1,5 +1,5 @@
 <?php
-  include "contact.php"
+  include "contact.php";
 ?>
 
 <!DOCTYPE html>
@@ -1024,6 +1024,7 @@
       </div>
     </section>
     <?php echo $error;?>
+    <a class=" display-6 text-danger" href="private.php"> show</a>
   </footer>
 
   <script src="main.js"></script>

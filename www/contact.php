@@ -7,13 +7,14 @@ if(isset($_POST['submit'])){
     $error = '';
     $error1 = '';
     $error2 = '';
-    $error5 = '';
+    $error3 = '';
+    $error4 = '';
 
     //declarer valeur form
     $name = $_POST['name'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
-    $message = $_POST['massage'];
+    $message = $_POST['message'];
 
     //nettoyer le variable si valable
     function clean_text($string) {
@@ -24,14 +25,14 @@ if(isset($_POST['submit'])){
     }
 
     // condition si name pas valable
-    if($name ==''){
+    if($name =='') {
         $error1 = '<p><label class="text-danger">Name is required</label></p>';
     } else {
         $name = clean_text($name);
     }
 
     //check si email valable
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error2 = '<p><label class="text-danger">Please enter a valid email address</label></p>';
     } else {
         $email = clean_text($email);
@@ -45,10 +46,14 @@ if(isset($_POST['submit'])){
     }
     
     //nettoyer la variable message
-    $message = clean_text($message);
+    if($message =='') {
+        $error4 = '<p><label class="text-danger">Message is required (8 words min.)</label></p>';
+    } else {
+        $message = clean_text($message);
+    }
 
     // si pas des erreurs creer csv et stocker les donnee
-    if($error1 == '' && $error2 == '' && $error3 == '') {
+    if($error1 == '' && $error2 == '' && $error3 == '' && $error4 == '') {
         
         //creer csv
         $fo = fopen("contact_data.csv", "a");
@@ -58,7 +63,7 @@ if(isset($_POST['submit'])){
             $name,
             $email,
             $subject,
-            $message
+            $message,
         );
 
         // ecrire sur le csv
