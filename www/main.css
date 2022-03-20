@@ -322,3 +322,14 @@ article{
         width: 619px;
     
     }
+
+    .mdl-bar{
+        display:flex;
+    }
+    
+    .btn-mdl{
+        border-color: rgba(255, 255, 255, 0.288);
+        color: white;
+        font-size: 1em;
+    
+    }
