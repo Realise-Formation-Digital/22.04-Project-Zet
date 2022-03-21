@@ -1,24 +1,10 @@
 <?php
-session_start();
 
-include "register.php";
-
-$ft = fopen($fs, "r");
-
-function get_credentials() {
-    if(isset($ft)) {
-        while ($line = fgetcsv($ft)) {
-        $lines[] = $line;
-        }
-    } else {
-    
-    }
-    return $lines;
-}
+$fs = "users.csv";
+$fr = fopen($fs, "r");
+$line = fgetcsv($fr, 1000, ";");
 
 if(isset($_POST['submit1'])){
-
-    $credentials = get_credentials();
 
     //declarer le erreur
     $error = '';
@@ -27,32 +13,27 @@ if(isset($_POST['submit1'])){
 
     //declarer valeur form
     $email2 = $_POST['email2'];
-    $password = $_POST['password1'];
+    $password1 = $_POST['password1'];
 
     if(!filter_var($email2, FILTER_VALIDATE_EMAIL)) {
         $error1 = '<p><label class="text-danger">Please enter a valid email address</label></p>';
+    } else if ($email2 === $line[0]) {
+        $email2 = true;
+    };
+
+    if($password1 == '') {
+        $error2 = '<p><label class="text-danger">Password is required</label></p>';
     } else {
-        
+        $password1 = password_hash($password1, PASSWORD_BCRYPT);    
     };
 
-    if($password1 =='') {
-        $error2 = '<p><label class="text-danger">password is required</label></p>';
-    } else {
-        $password1 = password_verify($password1);
+    if ($password1 === $line[1]) {
+        $password1 = true;
+    };  
+
+    if ($email2 === true && $password1 === true) {
+        $error = '<p><label class="text-danger">Credentials are valid, session started!</label></p>';
+        session_start();
     };
-
-    $user = array(
-        $email2,
-        $password1,
-    );
-
-    $check_credentials = function($email2, $password1) use ($credentials) {
-        foreach($credentials as $credential)
-            if($credential[0] == $email2 && $credential[1] == $password1)
-                return true;
-    
-        return false;
-    };
-
-    $error = $check_credentials($email2, $password1);
-}
+    var_dump($password1);
+};

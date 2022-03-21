@@ -29,13 +29,13 @@ if(isset($_POST['submit'])){
         $fs = fopen("users.csv", "a");
 
         // array avec les variable
-        $form_data = array(
+        $form_data1 = array(
             $email1,
             $password
         );
 
         // ecrire sur le csv
-        fputcsv($fs, $form_data, ";");
+        fputcsv($fs, $form_data1, ";");
         $error = '<h3 class="text-success text-center">compte creer</h3>';
     }
-}  
+}; 
